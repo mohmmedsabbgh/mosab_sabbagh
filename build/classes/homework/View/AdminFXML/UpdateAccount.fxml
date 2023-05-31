@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="504.0" prefWidth="459.0" style="-fx-background-color: #e1e8f2;" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.UpdateAccountsController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="488.0" prefWidth="444.0" style="-fx-background-color: white; -fx-background-radius: 40px;">
+         <children>
+            <Label layoutX="132.0" layoutY="14.0" prefHeight="46.0" prefWidth="210.0" text="Update User" textFill="#3f4c6f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <Button fx:id="updateUserBtn" layoutX="108.0" layoutY="411.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="25.0" prefWidth="119.0" styleClass="saveButton" stylesheets="@../../css/admin.css" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelBtn" layoutX="233.0" layoutY="411.0" mnemonicParsing="false" onAction="#cancelCreation" prefHeight="25.0" prefWidth="119.0" styleClass="cancelButton" stylesheets="@../../css/admin.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="BalanceTF" layoutX="208.0" layoutY="274.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="37.0" layoutY="324.0" prefHeight="42.0" prefWidth="127.0" text="Creation Date" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="270.0" prefHeight="42.0" prefWidth="127.0" text="Balance" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="218.0" prefHeight="42.0" prefWidth="127.0" text="Carrency" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="165.0" prefHeight="42.0" prefWidth="127.0" text="Uesr Name" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserNameTF" layoutX="208.0" layoutY="169.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <TextField fx:id="AccountsNumTF" layoutX="208.0" layoutY="127.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="37.0" layoutY="123.0" prefHeight="42.0" prefWidth="146.0" text="Account number" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CarrencyTF" layoutX="208.0" layoutY="222.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <TextField fx:id="CreationDateTF" layoutX="208.0" layoutY="329.0" onAction="#CreationDateTF" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="37.0" layoutY="81.0" prefHeight="42.0" prefWidth="146.0" text="user id" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="useridTF" layoutX="208.0" layoutY="85.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>
